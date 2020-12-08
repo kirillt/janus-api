@@ -195,7 +195,7 @@ class VideoRoomPublisher extends LeaveCapability {
 
     if (videoroom === 'slow_link') {
       this.logger.debug('VideoRoom got slow_link', data);
-      this.slowLink();
+      this.slowLink(data);
       return;
     }
 

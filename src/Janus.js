@@ -316,7 +316,6 @@ class Janus {
         this.logger.error('This handle is not attached to this session', sender)
         return
       }
-      pluginHandle.slowLink(json.uplink, json.nacks)
       return
     }
 

@@ -55,8 +55,8 @@ class JanusPlugin extends EventEmitter {
     this.emit('hangup')
   }
 
-  slowLink () {
-    this.emit('slowlink')
+  slowLink (data) {
+    this.emit('slowlink',data)
   }
 
   mediaState (medium, on) {
